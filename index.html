@@ -4,13 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .mainContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .todaysTask {
+            width: 50%;
+            height: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .tasks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .task {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .taskTitle {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .taskDescription {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .taskDate {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .taskTime {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .taskStatus {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
     <div class="mainContainer">
         <div class="todaysTask" id="todaysTask">
-            <div class="title" id="title"></div>
+            <div class="title" id="title">To Do App</div>
             <div class="tasks" id="tasks">
-            
+                <div class="task" id="task">
+                    <div class="taskTitle" id="taskTitle">Task 1</div>
+                    <div class="taskDescription" id="taskDescription">This is the first task</div>
+                    <div class="taskDate" id="taskDate">2020-07-01</div>
+                    <div class="taskTime" id="taskTime">12:00</div>
+                    <div class="taskStatus" id="taskStatus">Pending</div>
+                </div>
+                <div class="task" id="task">
+                    <div class="taskTitle" id="taskTitle">Task 2</div>
+                    <div class="taskDescription" id="taskDescription">This is the second task</div>
+                    <div class="taskDate" id="taskDate">2020-07-02</div>
+                    <div class="taskTime" id="taskTime">12:00</div>
+                    <div class="taskStatus" id="taskStatus">Pending</div>
+                </div>
             </div>
         </div>
     </div>
